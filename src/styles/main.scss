@@ -111,3 +111,68 @@ header{
     margin-top: 90px;
     
 }
+
+// Responsividade
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      img {
+        margin: 0 auto;
+      }
+      .lista_header {
+        flex-direction: column;
+        li {
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+    }
+  
+    .hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .characters {
+      grid-template-columns: 1fr 1fr;
+      img {
+        width: 200px;
+      }
+    }
+  
+    #character {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 10px 0;
+      img {
+        width: 150px;
+      }
+      .lista_header {
+        padding: 0;
+        li {
+          padding: 5px 0;
+        }
+      }
+    }
+  
+    .characters {
+      grid-template-columns: 1fr;
+      img {
+        width: 150px;
+      }
+    }
+  
+    #character {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  
